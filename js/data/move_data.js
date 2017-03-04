@@ -118,6 +118,12 @@ var MOVES_RBY = {
         category: 'Physical',
         isSpread: true
     },
+    'Ember': {
+        bp: 40,
+        type: 'Fire',
+        category: 'Special',
+        hasSecondaryEffect: true
+    },
     'Explosion': {
         bp: 170,
         type: 'Normal',
@@ -164,7 +170,7 @@ var MOVES_RBY = {
     'Glare': {
         bp: 0,
         type: 'Normal'
-    }, 
+    },
     'Gust': {
         bp: 40,
         type: 'Normal',
@@ -296,6 +302,11 @@ var MOVES_RBY = {
     'Rock Throw': {
         bp: 50,
         type: 'Rock',
+        category: 'Physical'
+    },
+    'Scratch': {
+        bp: 40,
+        type: 'Normal',
         category: 'Physical'
     },
     'Seismic Toss': {
@@ -474,7 +485,7 @@ var MOVES_GSC = $.extend(true, {}, MOVES_RBY, {
         type: 'Ground',
         category: 'Physical',
         isMultiHit: true
-    },  
+    },
     'Crabhammer': { alwaysCrit: false },
     'Cross Chop': {
         bp: 100,
@@ -546,6 +557,12 @@ var MOVES_GSC = $.extend(true, {}, MOVES_RBY, {
     'Frustration': {
         bp: 102,
         type: 'Normal',
+        category: 'Physical',
+        makesContact: true
+    },
+    'Fury Cutter': {
+        bp: 10,
+        type: 'Bug',
         category: 'Physical',
         makesContact: true
     },
@@ -723,6 +740,12 @@ var MOVES_GSC = $.extend(true, {}, MOVES_RBY, {
         category: 'Physical',
         makesContact: true,
         hasSecondaryEffect: true
+    },
+    'Rollout': {
+        bp: 30,
+        type: 'Rock',
+        category: 'Physical',
+        makesContact: true
     },
     'Sacred Fire': {
         bp: 100,
@@ -1960,6 +1983,7 @@ var MOVES_BW = $.extend(true, {}, MOVES_DPP, {
         category: 'Special',
         alwaysCrit: true
     },
+    'Fury Cutter': { bp: 20 },
     'Fusion Bolt': {
         bp: 100,
         type: 'Electric',
@@ -2339,6 +2363,7 @@ var MOVES_XY = $.extend(true, {}, MOVES_BW, {
         hasSecondaryEffect: true
     },
     'Frost Breath': { bp: 60 },
+    'Fury Cutter': { bp: 40 },
     'Future Sight': { bp: 120 },
     'Geomancy': {
         bp: 0,
