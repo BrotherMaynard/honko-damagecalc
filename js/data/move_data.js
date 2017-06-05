@@ -4,6 +4,11 @@ var MOVES_RBY = {
         type: 'Normal',
         category: 'Physical'
     },
+    'Absorb': {
+        bp: 20,
+        type: 'Grass',
+        category: 'Special'
+    },
     'Acid': {
         bp: 40,
         type: 'Poison'
